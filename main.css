@@ -214,6 +214,23 @@
             .form-section form {
                 width: 100%;
             }
+
+            .attached-image {
+                width: 100% !important;
+                margin: 0 auto;
+                background:none ;
+                border: none;
+            }
+
+            .attached-image img {
+                width: 90% !important;
+            }
+
+            .content-text{
+                width:80% !important;
+            }
+       
+  
             
         }
 
