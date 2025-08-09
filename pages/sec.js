@@ -121,3 +121,13 @@ document.querySelectorAll('.audio-play').forEach(button => {
       .replace(/(\d{2})(\d{0,2})$/, '$1 $2');
     e.target.value = value.trim();
   });
+
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // Form yuborilishini to‘xtatish (serverga yubormaslik uchun)
+    document.getElementById("overlay").classList.add("show");
+});
+
+document.getElementById("returnBtn").addEventListener("click", function() {
+    document.getElementById("overlay").classList.remove("show");
+});
