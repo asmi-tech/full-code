@@ -1,10 +1,10 @@
   body {
-            font-family: Arial, sans-serif;
+            font-family:sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             color: black;
-    font-size:18px;
+            font-size: 22px;
         }
 
         li {
@@ -13,14 +13,10 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 20px 10px;
         }
-        header {
-            text-align: center;
-            color: white;
-            padding: 20px;
-        }
-        header h2 {
+ 
+        .content h4 {
             margin: 0;
             font-weight: bold;
             color: black;
@@ -36,11 +32,12 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
         }
-        .content h2 {
-            color: #004aad;
-        }
         .content p {
-            line-height: 1.6;
+            line-height: 26px;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            margin: 15px 0px;
         }
         .interview {
            display: flex;
@@ -49,18 +46,18 @@
            text-align: center;
            width: 100%;
            background-color: #ccc6c6;
-           padding: 10px;
         }
 
         .font-bold {
-            font-weight: bold;
-            font-size: 20px;
-            color: black;
-            letter-spacing: 1.1px;
+            font-weight: 700 !important;
+            font-size: 22px !important;
+            color: black !important;
+            line-height: 26px !important ;
         }
 
         .interview h4{
             font-weight: 700;
+            margin-top: 20px;
         }
         .interview img {
             width: 250px;
@@ -68,6 +65,7 @@
         }
 
         .interview-details {
+            padding: 20px;
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -81,9 +79,19 @@
               box-shadow: 0px 0px 20px rgb(65, 64, 64);
             text-align: center;
             margin: 30px 0px;
-            max-width: 300px;
+            max-width: 400px;
             border-radius: 10px;
             padding: 10px;
+        }
+        .card-img {
+            width: 100% !important;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card-img img {
+            width: 100% !important;
+            border-radius: 8px;
         }
         .form-section h2 {
             color: #004aad;
@@ -102,16 +110,13 @@
             font-size: 1em;
         }
         .form-section button {
-            background-color: #004aad;
+            background-color: #E6373A;
             color: white;
-            padding: 10px;
+            padding: 10px 5px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            font-size: 1.2em;
-        }
-        .form-section button:hover {
-            background-color: #003087;
+            font-size: 20px;
         }
         .comments {
             margin-top: 20px;
@@ -137,11 +142,12 @@
         }
 
         .all-img {
-            width: 350px;
+           width: 50%;
             margin: 0px auto;
         }
 
         .img-con {
+            width: 100%;
             display: flex;
             justify-content: center;
         }
@@ -152,17 +158,23 @@
         }
 
         .yellow-list {
-            background-color: yellow;
-            border: 2px solid yellowgreen;
+            background-color: #E2EAA0;
+            border: 2px solid #CBDA58;
             padding-bottom: 20px;
         }
 
+        .yellow-list h4 {
+            margin: 15px 0px;
+        }
+
+
         .black-bg {
             background-color: rgb(214, 205, 205);
-            box-shadow: 0px 0px 20px rgba(29, 28, 28, 0.1);
-            padding: 5px;
+            
+            padding: 5px 10px;
             font-weight: 600;
             border-radius: 5px;
+            box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
         }
 
         strong {
@@ -171,7 +183,7 @@
         }
 
         .red-con {
-            padding: 10px;
+            padding: 20px;
             border: 1px solid red;
             letter-spacing: 1.1px;
         }
@@ -216,72 +228,142 @@
         }
 
         /* Audio uchun yangi stil */
-.audio-message {
-    margin-bottom: 10px;
-}
+  .comments {
+        width: 100%;
+        margin: 20px auto;
+    }
+    .comments h2 {
+        background: #d9e3ec;
+        padding: 8px 10px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #365899;
+        margin: 0;
+    }
+    .comment {
+        display: flex;
+        align-items: flex-start;
+        padding: 15px 10px;
+        border-bottom: 1px solid #e9eaed;
+    }
+    .avatar {
+        width: 40px;
+        height: 40px;
+        background: #f0f0f0;
+        margin-right: 10px;
+        flex-shrink: 0;
+        background-image: url('https://www.svgrepo.com/show/382106/user-circle.svg');
+        background-size: cover;
+        background-position: center;
+    }
+    .comment-content {
+        flex: 1;
+    }
+    .name {
+        font-weight: bold;
+        font-size: 13px;
+        color: #365899;
+        margin-bottom: 3px;
+    }
+    audio {
+        width: 50%;
+        margin: 5px 0;
+    }
+    .text {
+        font-size: 13px;
+        margin: 3px 0;
+    }
+    .time {
+        font-size: 12px;
+        color: #90949c;
+    }
 
-.audio {
-    display: flex;
-    align-items: center;
-    background-color: #e5e5ea;
-    padding: 5px 10px;
-    border-radius: 10px;
-    position: relative;
-}
 
-.audio-play {
-    width: 20px;
-    height: 20px;
-    background-color: #007aff;
-    border-radius: 50%;
-    margin-right: 5px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 12px;
-}
+  .post {
+    width: min(var(--container-w), 96%);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    border-radius: 6px;
+    padding:14px;
+  }
 
-.audio-play.playing::after {
-    content: '||';
-}
+  .post-header{
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+    margin-bottom:10px;
+  }
 
-.audio-play.paused::after {
-    content: '▶';
-}
+  .avatar{
+    width:48px;
+    height:48px;
+    border-radius:4px;
+    flex:0 0 48px;
+    background:linear-gradient(180deg,#ddd,#cfcfcf);
+    overflow:hidden;
+  }
+  .avatar img{ width:100%; height:100%; object-fit:cover; display:block; }
 
-.audio-duration {
-    font-size: 12px;
-    color: #8e8e93;
-    margin-right: 5px;
-    min-width: 60px;
-}
+  .meta{
+    flex:1;
+  }
 
-.audio-progress {
-    flex-grow: 1;
-    height: 3px;
-    background-color: #d1d1d6;
-    border-radius: 2px;
-    position: relative;
-    margin: 0 5px;
-}
+  .author{
+    font-weight:700;
+    color:#163b63;
+    font-size:15px;
+    margin-bottom:3px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
 
-.audio-progress .progress-bar {
-    height: 100%;
-    background-color: #007aff;
-    border-radius: 2px;
-    width: 0%;
-    position: absolute;
-}
+  .author .action {
+    color: var(--muted);
+    font-weight:500;
+    font-size:13px;
+  }
 
-.audio-options {
-    font-size: 12px;
-    color: #8e8e93;
-    margin-left: 5px;
-    cursor: pointer;
-}
+  .content-text{
+    margin-top:6px;
+    line-height:1.45;
+    color:#333;
+    font-size:14px;
+  }
 
-audio {
-    display: none;
-}
+  .attached-image {
+    margin:14px auto 8px;
+    width: 420px;               /* o‘rnatilgan kenglik — originalga o‘xshash ko‘rinish */
+    max-width:100%;
+    border-radius:6px;
+    overflow:hidden;
+    border: 1px solid #e6e6e6;
+    background:#fafafa;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+  }
+
+  .attached-image img{
+    display:block;
+    width:100%;
+    height:auto;
+  }
+
+  .time {
+    color:var(--muted);
+    font-size:12px;
+    margin-top:8px;
+  }
+
+  /* Post ichidagi rasm ostidagi joylashuv (kadrlash) — skrinshotga o‘xshash joy */
+  .image-caption {
+    font-size:12px;
+    color:var(--muted);
+    margin-top:6px;
+  }
+
+  /* kichik ekranlarda biroz siqish */
+  @media (max-width:520px){
+    .author { font-size:14px; }
+    .avatar { width:40px; height:40px; flex:0 0 40px; }
+  }

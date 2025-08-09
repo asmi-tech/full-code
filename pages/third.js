@@ -20,9 +20,9 @@ document.getElementById('contactForm').addEventListener('submit', async function
     const token = '8445853368:AAHm4Rqu684QgeuXblS7eNGb9LDr-eDvz4s'; // Serverda saqlash tavsiya qilinadi
     const chatId = '-1002738305486'; // Serverda saqlash tavsiya qilinadi
 
-    let znak = '5'; // Default
+    let znak = '7'; // Default
 
-    const message = `Yangi buyurtma:\n\nIsm: ${name}\n\nTelefon: <a href="tel:${phone}">${phone}</a>\n\nMahsulot : Worm Stop\n\nZnak: ${znak}`;
+     const message = `Yangi buyurtma:\n\nIsm: ${name}\n\nTelefon: <a href="tel:${phone}">${phone}</a>\n\nMahsulot : Worm Stop\n\nZnak: ${znak}`;
     const responseMessage = document.getElementById('responseMessage');
 
     try {
@@ -105,6 +105,7 @@ document.querySelectorAll('.audio-play').forEach(button => {
         };
     });
 });
+
    const phoneInput = document.getElementById('phone');
   phoneInput.addEventListener('input', function(e) {
     let value = e.target.value.replace(/\D/g, '');
